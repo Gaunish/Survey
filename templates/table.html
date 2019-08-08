@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block main %}
+<h1 class="display-4">sheet</h1>
+<div class="table-responsive">
+<table class = "table table-striped table-bordered table-hover ">
+
+<thead >
+<tr class="table-info">
+<th scope="col">name</th>
+<th scope="col">option</th>
+<th scope="col">position</th>
+</tr>
+</thead>
+
+<tbody>
+    <hr class="border:2px solid white">
+{% for student in students %}
+<tr>
+<td>{{ student[0] }}</td>
+<td>{{ student[1] }}</td>
+<td>{{ student[2] }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+</div>
+{% endblock %}

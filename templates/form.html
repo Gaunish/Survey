@@ -1,0 +1,68 @@
+{% extends "layout.html" %}
+
+{% block main %}
+
+    <!-- http://getbootstrap.com/docs/4.1/content/typography/ -->
+    <h1 class="display-4 mb-3">Form</h1>
+    <hr>
+
+    <!-- http://getbootstrap.com/docs/4.1/components/forms/ -->
+    <form action="/form" method="post">
+
+
+          <div class = "form-group">
+          <h5><label for = "name">Name</label></h5>
+          <input type = "text" name="name" class="form-control" placeholder="enter your name">
+          </div>
+          </div>
+
+         <hr class = "my-4">
+
+          <div class ="form-group ">
+               <h5><label for = "name">Type</label></h5>
+              <select  name="option" class="form-control">
+              <option  value="a">a</option>
+              <option  value="b">b</option>
+              <option  value="c">c</option>
+              </select>
+          </select>
+          </div>
+
+         <hr class="my-4">
+
+        <div class = "form-check">
+        <input type="radio" name = "position" value="beater">
+        <label for="beater">beater</label>
+        </div>
+
+
+        <div class = "form-check">
+        <input type="radio" name = "position" value="chaser">
+        <label for="chaser">chaser</label>
+        </div>
+
+        <div class = "form-check">
+        <input type="radio" name = "position" value="keeper">
+        <label for="keeper">keeper</label>
+        </div>
+
+        <div class = "form-check">
+        <input type="radio" name = "position" value="seeker">
+        <label for="seeker">seeker</label>
+        </div>
+
+        <hr class="my-4">
+
+        <!-- http://getbootstrap.com/docs/4.1/components/buttons/ -->
+        <button class="btn btn-primary" type="submit">Submit</button>
+
+
+    </form>
+
+    <script>
+
+        /* TODO */
+
+    </script>
+
+{% endblock %}
